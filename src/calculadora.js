@@ -4,7 +4,11 @@ function calculadoraCadenas (cadena){
         {
             let cadenaAux = cadena.split(/,|-/);
             for (let i = 0; i < cadenaAux.length ; i++){
-                resultado += parseInt(cadenaAux[i]);
+                if (parseInt(cadenaAux[i]) <= 1000)
+                {
+                    resultado += parseInt(cadenaAux[i]);
+                }
+                
             }
         }
         return resultado; 
