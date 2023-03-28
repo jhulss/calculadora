@@ -8,4 +8,8 @@ describe("Sumar", () => {
   it("deberia devolver un numero leido de la cadena", () => {
     expect(calculadoraCadenas("4")).toEqual(4);
   });
+
+  it("deberia sumar dos numeros de una cadena separados por coma", () => {
+    expect(calculadoraCadenas("1,3")).toEqual(4);
+  });
 });
