@@ -1,5 +1,6 @@
 function calculadoraCadenas (cadena){
-    if (cadena == "")
+    let resultadoSuma = 0;
+    if (cadena != "")
     {
         return 0;
     }
