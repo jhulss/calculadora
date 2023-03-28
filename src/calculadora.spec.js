@@ -16,4 +16,12 @@ describe("Sumar", () => {
   it("deberia sumar 4 numeros de una cadena separados por coma", () => {
     expect(calculadoraCadenas("1,3,4,2")).toEqual(10);
   });
+
+  it("deberia sumar 4 numeros de una cadena separados por coma y guion", () => {
+    expect(calculadoraCadenas("1-3,2-5")).toEqual(11);
+  });
+
+  it("deberia sumar 4 numeros de una cadena separados por coma y guion", () => {
+    expect(calculadoraCadenas("1,3,2-6")).toEqual(12);
+  });
 });
